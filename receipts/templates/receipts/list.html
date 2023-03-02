@@ -22,9 +22,9 @@
                     {% for list in receipts_lists %}
                         <tr>
                             <td>{{ list.vendor }}</td>
-                            <td>{{ list.total }}e</td>
+                            <td>{{ list.total }}</td>
                             <td>{{ list.tax }}</td>
-                            <td>{{ list.date|date:"n/j/y" }}</td>
+                            <td>{{ list.date|date:"m/d/y" }}</td>
                             <td>{{ list.category }}</td>
                             <td>{{ list.account }}</td>
                         </tr>
