@@ -11,6 +11,12 @@
             <nav>
                 <ul>
                     {% if user.is_authenticated %}
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'category_list' %}">Categories</a></li>
+                    <li><a href="{% url 'account_list' %}">Accounts</a></li>
+                    <li><a href="{% url 'create_category' %}">Create New category</a></li>
+                    <li><a href="{% url 'create_account' %}">Create New Account</a></li>
+                    <li><a href="{% url 'create_receipt' %}">Create New Receipt</a></li>
                     <li><a href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
                     <li><a href="{% url 'signup' %}">Sign up</a></li>
